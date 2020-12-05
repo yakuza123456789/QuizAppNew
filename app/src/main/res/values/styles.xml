@@ -1,10 +1,128 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#4CE2A7</item>
+        <item name="correctA">#801F2041</item>
+        <item name="questionTextColor">#1A051D</item>
+        <item name="wrongAnswer">#FF4D4D</item>
+        <item name="clicked">#6979F8</item>
+        <item name="whiteText">#000000</item>
+        <item name="pBar">#BE52F2</item>
+        <item name="backgroundColor">#FFFF</item>
+        <item name="color">#FF6581</item>
     </style>
+
+    <style name="AppTheme." parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="ForBtn" parent="android:MediaButton">
+        <item name="android:layout_width">280dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">#6979F8</item>
+        <item name="android:text">"helloW"</item>
+    </style>
+
+    <style name="fragment_name_ts">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">26dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+    </style>
+
+    <style name="SeekBarColor" parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">#C151D5</item>
+    </style>
+
+    <style name="for_variant">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Night" parent="AppTheme">
+        <item name="colorPrimary">#5F5D61</item>
+        <item name="colorPrimaryDark">#5F5D61</item>
+        <item name="colorAccent">#5F5D61</item>
+        <item name="correctA">#009688</item>
+        <item name="questionTextColor">#EFECEF</item>
+        <item name="wrongAnswer">#871010</item>
+        <item name="clicked">#CDDC39</item>
+        <item name="whiteText">#FFFFFF</item>
+        <item name="pBar">#4CAF50</item>
+        <item name="backgroundColor">#5F5D61</item>
+        <item name="color">#FFEB3B</item>
+
+
+
+
+    </style>
+
+    <style name="Orange" parent="AppTheme">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#4CE2A7</item>
+        <item name="correctA">#801F2041</item>
+        <item name="questionTextColor">#1A051D</item>
+        <item name="wrongAnswer">#FF4D4D</item>
+        <item name="clicked">#6979F8</item>
+        <item name="whiteText">#000000</item>
+        <item name="pBar">#BE52F2</item>
+        <item name="backgroundColor">#FF6E40</item>
+        <item name="color">#FF6581</item>
+    </style>
+
+    <style name="Blue" parent="AppTheme">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#4CE2A7</item>
+        <item name="correctA">#801F2041</item>
+        <item name="questionTextColor">#1A051D</item>
+        <item name="wrongAnswer">#FF4D4D</item>
+        <item name="clicked">#6979F8</item>
+        <item name="whiteText">#000000</item>
+        <item name="pBar">#BE52F2</item>
+        <item name="backgroundColor">#40C4FF</item>
+        <item name="color">#FF6581</item>
+    </style>
+
+    <style name="Dark" parent="AppTheme">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#4CE2A7</item>
+        <item name="correctA">#801F2041</item>
+        <item name="questionTextColor">#1A051D</item>
+        <item name="wrongAnswer">#FF4D4D</item>
+        <item name="clicked">#6979F8</item>
+        <item name="whiteText">#000000</item>
+        <item name="pBar">#BE52F2</item>
+        <item name="backgroundColor">#8E8080</item>
+        <item name="color">#FF6581</item>
+    </style>
+
+
+    <style name="Green" parent="AppTheme">
+        <item name="colorPrimary">#6200EE</item>
+        <item name="colorPrimaryDark">#3700B3</item>
+        <item name="colorAccent">#4CE2A7</item>
+        <item name="correctA">#801F2041</item>
+        <item name="questionTextColor">#1A051D</item>
+        <item name="wrongAnswer">#FF4D4D</item>
+        <item name="clicked">#6979F8</item>
+        <item name="whiteText">#000000</item>
+        <item name="pBar">#BE52F2</item>
+        <item name="backgroundColor">#8BFF05</item>
+        <item name="color">#FF6581</item>
+    </style>
+
 
 </resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <import
+            alias="v"
+            type="android.view.View" />
+
+        <variable
+            name="qm"
+            type="com.azamat.data.model.question.QuestionModel" />
+
+        <variable
+            name="vh"
+            type="com.azamat.data.adapter.question.QuestionAdapter.ViewHolder" />
+
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="44dp"
+                android:paddingEnd="44dp"
+                android:text="@{qm.question}"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/questions_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="@{qm.type.equals(`multiple`) ? v.VISIBLE : v.GONE}"
+            tools:ignore="Suspicious0dp">
+
+            <Button
+                android:id="@+id/question_btn_first"
+                style="@style/ForBtn"
+                android:background="@drawable/for_variants"
+                android:onClick="@{(v)->vh.methods(qm.incorrectAnswers.get(0),0)}"
+                android:text="@{qm.type.equals(`multiple`) ? qm.incorrectAnswers.get(0): ``}" />
+
+            <Button
+                android:id="@+id/question_btn_second"
+                style="@style/ForBtn"
+                android:background="@drawable/for_variants"
+                android:onClick="@{(v)->vh.methods(qm.incorrectAnswers.get(1),1)}"
+                android:text="@{qm.type.equals(`multiple`) ? qm.incorrectAnswers.get(1): ``}" />
+
+
+            <Button
+                android:id="@+id/question_btn_third"
+                style="@style/ForBtn"
+                android:background="@drawable/for_variants"
+                android:onClick="@{(v)->vh.methods(qm.incorrectAnswers.get(2),2)}"
+                android:text="@{qm.type.equals(`multiple`) ? qm.incorrectAnswers.get(2): ``}" />
+
+            <Button
+                android:id="@+id/question_btn_fourth"
+                style="@style/ForBtn"
+                android:background="@drawable/for_variants"
+                android:onClick="@{(v)->vh.methods(qm.incorrectAnswers.get(3),3)}"
+                android:text="@{qm.type.equals(`multiple`) ? qm.incorrectAnswers.get(3): ``}" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/question_boolean_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="@{qm.type.equals(`boolean`) ? v.VISIBLE : v.GONE}"
+            tools:ignore="Suspicious0dp">
+
+            <Button
+                android:id="@+id/question_btn_fifth"
+                style="@style/ForBtn"
+                android:background="@drawable/for_variants"
+                android:onClick="@{(v)->vh.methods(qm.incorrectAnswers.get(0),4)}"
+                android:text="@{qm.type.equals(`boolean`) ? qm.incorrectAnswers.get(0): ``}" />
+
+            <Button
+                android:id="@+id/question_btn_sixth"
+                style="@style/ForBtn"
+                android:background="@drawable/for_variants"
+                android:onClick="@{(v)->vh.methods(qm.incorrectAnswers.get(1),5)}"
+                android:text="@{qm.type.equals(`boolean`) ? qm.incorrectAnswers.get(1): ``}" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
