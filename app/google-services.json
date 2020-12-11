@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "948324799521",
+    "project_id": "quizapp22-6cd9e",
+    "storage_bucket": "quizapp22-6cd9e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948324799521:android:71f8a0727817b57152ff60",
+        "android_client_info": {
+          "package_name": "com.azamat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948324799521-39khvmntakko2gkcrbfhdn01it01mmfm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtkcHsx1B4p8Rh-VWOQ7mJB_81wHgjhSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948324799521-39khvmntakko2gkcrbfhdn01it01mmfm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
